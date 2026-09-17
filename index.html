@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ROSHAN.EXE — an experimental digital lab by a first-year CSE student." />
+    <title>ROSHAN.EXE — Digital Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="boot-screen" id="bootScreen" aria-label="System boot sequence">
+      <div class="boot-inner">
+        <p class="eyebrow">ROSHAN.EXE / BOOTLOADER 01.0</p>
+        <h1>Initializing<br /><em>the lab.</em></h1>
+        <div class="boot-bar"><span id="bootProgress"></span></div>
+        <div class="boot-log" id="bootLog">LOADING IDENTITY MODULE...</div>
+        <button class="text-button" id="skipBoot">SKIP INTRO <span>↗</span></button>
+      </div>
+    </div>
+
+    <div class="site-shell" id="siteShell">
+      <div class="cursor-glow"></div>
+      <header class="nav">
+        <a href="#top" class="wordmark" id="logo">ROSHAN<span>.EXE</span><i></i></a>
+        <button class="menu-toggle" aria-label="Open navigation"><span></span><span></span></button>
+        <nav>
+          <a href="#about">ABOUT</a><a href="#experiments">EXPERIMENTS</a><a href="#mindset">R&D</a>
+          <a href="#ideas">IDEAS</a><a href="#ai-lab">AI LAB</a><a href="#contact">CONNECT</a>
+        </nav>
+        <div class="online"><b></b> SYSTEM ONLINE</div>
+      </header>
+
+      <main id="top">
+        <section class="hero section">
+          <div class="hero-copy reveal">
+            <div class="section-tag"><span>01</span> PERSONAL RESEARCH INTERFACE</div>
+            <p class="hero-kicker">HELLO, I’M ROSHAN.</p>
+            <h1>Still compiling<br /><span>great ideas.</span></h1>
+            <p class="lead">First-year CSE student · curious builder · aspiring R&amp;D explorer.</p>
+            <p class="statement">“I don’t have everything figured out yet. That’s exactly why I like experimenting.”</p>
+            <div class="hero-actions"><a class="button primary" href="#about">ENTER THE LAB <span>↓</span></a><a class="button" href="#system">VIEW SYSTEM <span>↗</span></a></div>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="orbital orbital-a"></div><div class="orbital orbital-b"></div>
+            <div class="system-card">
+              <div class="card-top"><span>LIVE SYSTEM READOUT</span><i></i></div>
+              <div class="system-core"><div class="core-ring"><span>R</span></div></div>
+              <div class="readout"><p><span>STATUS</span><b>LEARNING</b></p><p><span>CURRENT FOCUS</span><b>C++ / DSA</b></p><p><span>EXPLORING</span><b>AI / WEB / R&amp;D</b></p><p><span>VERSION</span><b>01.0</b></p></div>
+            </div>
+            <span class="coordinate c1">18.5204° N</span><span class="coordinate c2">73.8567° E</span>
+          </div>
+          <a class="scroll-hint" href="#about"><span></span> SCROLL TO EXPLORE</a>
+        </section>
+
+        <section class="section identity" id="about">
+          <div class="section-label reveal"><span>02</span><div>IDENTITY MODULE<br /><small>WHO AM I?</small></div></div>
+          <div class="identity-main reveal"><h2>A beginner with<br />a <em>question-first</em><br />mindset.</h2><div class="identity-text"><p>I’m a first-year Computer Science student interested in the parts of technology that make you stop and ask: <em>“How does that work?”</em></p><p>Right now, I’m building fundamentals, trying things before I fully understand them, and learning through the useful mess of experimentation. I’m especially drawn to coding, AI, and the process of turning a vague question into something testable.</p><a class="inline-link" href="#mindset">MY APPROACH <span>→</span></a></div></div>
+          <div class="identity-stats reveal"><div><span>MODE</span><b>CURIOUS</b></div><div><span>STATE</span><b>IN PROGRESS</b></div><div><span>DRIVER</span><b>WHY?</b></div><div><span>OUTPUT</span><b>EXPERIMENTS</b></div></div>
+        </section>
+
+        <section class="section experiments" id="experiments">
+          <div class="heading-row reveal"><div><div class="section-tag"><span>03</span> ACTIVE MODULES</div><h2>Current <em>experiments.</em></h2></div><p>Not a skill list. A snapshot of the areas I’m actively exploring, one question at a time.</p></div>
+          <div class="experiment-grid">
+            <article class="experiment-card reveal"><span class="exp-num">EXP. 01</span><div class="exp-icon">C++</div><h3>C++</h3><p>Building strong programming fundamentals and learning to think more clearly through code.</p><footer><span>STATUS</span><b>IN PROGRESS</b></footer></article>
+            <article class="experiment-card reveal"><span class="exp-num">EXP. 02</span><div class="exp-icon">DSA</div><h3>Data Structures<br />&amp; Algorithms</h3><p>Exploring the building blocks behind efficient problem solving.</p><footer><span>STATUS</span><b>BUILDING FUNDAMENTALS</b></footer></article>
+            <article class="experiment-card reveal"><span class="exp-num">EXP. 03</span><div class="exp-icon">WEB</div><h3>Web Development</h3><p>Learning how ideas can become experiences people can actually interact with.</p><footer><span>STATUS</span><b>EXPLORING</b></footer></article>
+            <article class="experiment-card reveal"><span class="exp-num">EXP. 04</span><div class="exp-icon">AI</div><h3>Artificial Intelligence</h3><p>Following the questions, possibilities, and real-world impact of intelligent systems.</p><footer><span>STATUS</span><b>EXPLORING</b></footer></article>
+          </div>
+        </section>
+
+        <section class="section mindset" id="mindset">
+          <div class="mindset-grid"><div class="reveal"><div class="section-tag"><span>04</span> R&amp;D MINDSET</div><h2>Curiosity is not a phase.<br /><em>It’s a method.</em></h2><p>I’m interested in R&amp;D because I enjoy the part before the answer: exploring a problem, trying a different path, learning from what doesn’t work, and building again with a little more understanding.</p></div><div class="process reveal"><button class="process-step active" data-step="question"><span>01</span> QUESTION <i>+</i></button><button class="process-step" data-step="experiment"><span>02</span> EXPERIMENT <i>+</i></button><button class="process-step" data-step="fail"><span>03</span> FAIL / OBSERVE <i>+</i></button><button class="process-step" data-step="learn"><span>04</span> LEARN <i>+</i></button><button class="process-step" data-step="iterate"><span>05</span> ITERATE <i>+</i></button><div class="process-detail" id="processDetail">Every experiment starts with a useful question — not necessarily an obvious answer.</div></div></div>
+        </section>
+
+        <section class="section vault" id="ideas">
+          <div class="heading-row reveal"><div><div class="section-tag"><span>05</span> CONCEPT / EXPLORATION</div><h2>Idea <em>vault.</em></h2></div><p>Not completed projects — directions I’d genuinely like to investigate and build.</p></div>
+          <div class="vault-list">
+            <details class="idea reveal"><summary><span class="idea-id">01</span><h3>Study Signal</h3><span class="idea-type">CONCEPT</span><i>+</i></summary><div class="idea-detail"><div><span>THE QUESTION</span><p>Could a simple tool help students notice their study patterns without adding more pressure?</p></div><div><span>THE POSSIBLE BUILD</span><p>A calm visual log that turns small daily inputs into useful reflections.</p></div><div><span>TO EXPLORE</span><p>Web development · data visualization · thoughtful UX</p></div></div></details>
+            <details class="idea reveal"><summary><span class="idea-id">02</span><h3>Campus Query Map</h3><span class="idea-type">CONCEPT</span><i>+</i></summary><div class="idea-detail"><div><span>THE QUESTION</span><p>What if common campus questions could be organized in a way that feels easy to search and contribute to?</p></div><div><span>THE POSSIBLE BUILD</span><p>A student-built knowledge map for useful campus information.</p></div><div><span>TO EXPLORE</span><p>Web development · information design · community systems</p></div></div></details>
+            <details class="idea reveal"><summary><span class="idea-id">03</span><h3>Explain It Back</h3><span class="idea-type">CONCEPT</span><i>+</i></summary><div class="idea-detail"><div><span>THE QUESTION</span><p>Can explaining a concept in your own words reveal where your understanding is still fuzzy?</p></div><div><span>THE POSSIBLE BUILD</span><p>A lightweight practice space that prompts students to explain, question, and refine.</p></div><div><span>TO EXPLORE</span><p>AI concepts · learning design · interaction patterns</p></div></div></details>
+          </div>
+        </section>
+
+        <section class="section ai-lab" id="ai-lab">
+          <div class="ai-intro reveal"><div class="section-tag"><span>06</span> AI LAB</div><h2>Ask the <em>system.</em></h2><p>A small on-page prototype. It only knows what’s in this portfolio.</p><div class="quick-prompts"><button>What is Roshan learning?</button><button>Why R&amp;D?</button><button>What does he want to explore?</button></div></div>
+          <div class="chat reveal"><div class="chat-head"><span><i></i> ROSHAN.EXE / PORTFOLIO PROTOTYPE</span><small>LOCAL KNOWLEDGE BASE</small></div><div class="chat-body" id="chatBody"><div class="bot-message">Hello. Ask about Roshan’s learning journey, current interests, ideas, or R&amp;D mindset.</div></div><form class="chat-input" id="chatForm"><span>›</span><input id="chatInput" autocomplete="off" placeholder="Ask the system..." /><button aria-label="Send message">↗</button></form></div>
+        </section>
+        <section class="section terminal-lab">
+          <div class="terminal-copy reveal"><div class="section-tag"><span>06.1</span> EXPERIMENT LAB</div><h2>Try the <em>console.</em></h2><p>A tiny terminal interface built into the site. It’s another way to explore this lab.</p><p class="terminal-note">COMMANDS: <b>help</b> · <b>about</b> · <b>skills</b> · <b>ideas</b> · <b>status</b> · <b>clear</b></p></div>
+          <div class="terminal-window reveal"><div class="terminal-title"><span><i></i><i></i><i></i> LAB.CONSOLE</span><small>READY</small></div><div class="terminal-output" id="terminalOutput"><p><span>ROSHAN.EXE</span> experiment console v1.0</p><p>Type <b>help</b> to see available commands.</p></div><form class="terminal-input" id="terminalForm"><span>roshan@lab:~$</span><input id="terminalInput" autocomplete="off" aria-label="Terminal command" /><button>RUN</button></form></div>
+        </section>
+
+        <section class="section system" id="system">
+          <div class="system-heading reveal"><div class="section-tag"><span>07</span> SYSTEM VIEW</div><h2>Learning matrix<br /><em>without the hype.</em></h2></div>
+          <div class="matrix reveal"><div class="matrix-row"><span>01 / CURRENTLY LEARNING</span><div><b>C++</b><b>Data Structures &amp; Algorithms</b></div><i>LEARNING</i></div><div class="matrix-row"><span>02 / EXPLORING</span><div><b>Web Development</b><b>Artificial Intelligence</b><b>Research &amp; Development</b></div><i>EXPLORING</i></div><div class="matrix-row"><span>03 / TOOLS</span><div><b>GitHub</b><b>VS Code</b><b>AI Tools</b></div><i>EXPERIMENTING</i></div></div>
+          <div class="version-history reveal"><div class="section-tag"><span>08</span> VERSION HISTORY</div><div class="timeline"><div><span>v0.1</span><p>Started exploring technology.</p></div><div><span>v0.5</span><p>Began the CSE journey.</p></div><div><span>v0.8</span><p>Started learning C++ / DSA.</p></div><div><span>v1.0</span><p>Exploring AI + R&amp;D.</p></div><div class="next"><span>vNEXT</span><p>Still compiling.</p></div></div></div>
+        </section>
+
+        <section class="section why">
+          <div class="why-mark reveal">?</div><div class="reveal"><div class="section-tag"><span>09</span> WHY SKETCH R&amp;D?</div><h2>I don’t want to join R&amp;D because it <em>sounds technical.</em></h2><p>I’m drawn to it because I like asking how things work, trying different approaches, learning from failed attempts, and turning an idea into something tangible. I’m at the beginning of that journey — and I’m ready to learn in a room full of people who enjoy the same process.</p></div>
+        </section>
+      </main>
+
+      <footer class="contact section" id="contact">
+        <div class="footer-top"><div class="section-tag"><span>10</span> CONNECT TERMINAL</div><p>Have a question, an idea, or an experiment worth trying?</p></div>
+        <h2>Let’s make the<br /><em>next version.</em></h2>
+        <div class="contact-links"><a href="https://github.com/immanuelaroshan" target="_blank" rel="noreferrer">› OPEN GITHUB <span>↗</span></a><a href="#" aria-label="LinkedIn link placeholder">› LINKEDIN / URL PENDING <span>↗</span></a><a href="mailto:immanuelaroshan@gmail.com">› SEND MESSAGE <span>↗</span></a></div>
+        <div class="footer-bottom"><span>© 2026 ROSHAN.EXE</span><span>DESIGNED AS AN EXPERIMENT</span><span id="debugStatus">STATUS: ONLINE</span></div>
+      </footer>
+      <div class="secret-panel" id="secretPanel"><button id="closeSecret">×</button><span>DEBUG MODE / UNLOCKED</span><h3>You found a hidden module.</h3><p>Curiosity detected. That’s the whole point.</p></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
